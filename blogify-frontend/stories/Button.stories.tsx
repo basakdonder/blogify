@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from "@storybook/react";
-import Button from "../components/Button";
+import Button from "@/components/Button";
 
 export default {
   title: "Button",
@@ -14,5 +14,5 @@ interface ButtonProps {
 export const Primary: StoryObj = (args: ButtonProps) => <Button {...args} />;
 Primary.args = {
   label: "Button",
-  bgColor: "brightBlue",
+  bgColor: "bg-brightBlue",
 };
