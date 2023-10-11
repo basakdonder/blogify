@@ -1,7 +1,11 @@
+import MainSection1 from "@/components/MainSection1";
+
 export default function Home() {
   return (
-    <main>
-      <h1>Home</h1>
+    <main className="w-full">
+      <div className="max-w-7xl mx-auto">
+        <MainSection1 />
+      </div>
     </main>
   );
 }

@@ -6,8 +6,9 @@ interface ButtonProps {
 }
 
 export default function Button({ label, bgColor }: ButtonProps) {
-  const style = {
-    backgroundColor: bgColor,
-  };
-  return <button style={style}>{label}</button>;
+  return (
+    <button className={`px-5 py-2 text-white rounded bg-${bgColor}`}>
+      {label}
+    </button>
+  );
 }

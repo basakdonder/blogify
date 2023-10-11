@@ -14,5 +14,5 @@ interface ButtonProps {
 export const Primary: StoryObj = (args: ButtonProps) => <Button {...args} />;
 Primary.args = {
   label: "Button",
-  bgColor: "red",
+  bgColor: "brightBlue",
 };
