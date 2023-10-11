@@ -23,7 +23,7 @@ export default function MainSection1() {
               id="email"
               placeholder="Enter your email..."
             />
-            <Button label="Get Started" bgColor="brightBlue" />
+            <Button label="Get Started" bgColor="bg-brightBlue" />
           </form>
         </div>
       </div>
