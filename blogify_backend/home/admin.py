@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django_summernote.admin import SummernoteModelAdmin
-from .models import Post
+from .models import Post, UserProfile
 
 
 # Register your models here.
@@ -15,4 +15,7 @@ class PostAdmin(SummernoteModelAdmin):
     summernote_fields = ("content",)
 
 
+admin.site.site_header = "Blogify Admin"
+admin.site.index_title = "Blogify Admin Panel"
 admin.site.register(Post, PostAdmin)
+admin.site.register(UserProfile)
