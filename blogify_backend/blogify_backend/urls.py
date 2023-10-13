@@ -18,12 +18,11 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf.urls.static import static
 from django.conf import settings
-from home.api import *
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("api/posts/", api_posts, name="posts"),
     path("summernote/", include("django_summernote.urls")),
+    path("api/", include("home.urls")),
 ]
 
 if settings.DEBUG:
